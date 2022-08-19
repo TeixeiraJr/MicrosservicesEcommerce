@@ -8,7 +8,9 @@ RUN npm install
 COPY . .
 
 RUN npm run build
+COPY .env ./dist/
+WORKDIR ./dist
 
 EXPOSE 3333
 
-CMD node dist/index.js
+CMD node index.js
