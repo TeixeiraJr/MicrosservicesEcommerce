@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:12-alpine
+    container_name: 'postgres-hours'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - DATABASE_NAME="ecommercems"
+      - DATABASE_HOST="localhost"
+      - DATABASE_TYPE="postgres"
+    ports:
+      - 5432:5432
