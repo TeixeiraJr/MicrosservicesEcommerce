@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build && npm run migration
+RUN npm run build
 COPY .env ./dist/
 WORKDIR /usr/app/dist
 

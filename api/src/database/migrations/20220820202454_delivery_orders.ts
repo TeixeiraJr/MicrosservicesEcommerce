@@ -15,6 +15,7 @@ export async function up(knex: Knex): Promise<void> {
         t.string('uf').notNullable();
         t.string('complement');
         t.string('reference_point');
+        t.timestamps(false, true);
     })
 }
 

@@ -7,6 +7,7 @@ export async function up(knex: Knex): Promise<void> {
         t.integer('user_id').references('id').inTable('users').notNullable();
         t.integer('product_id').references('id').inTable('products').notNullable();
         t.integer('amount').notNullable();
+        t.timestamps(false, true);
     })
 }
 
