@@ -1,7 +1,6 @@
 import express from 'express';
 import PurchaseController from './controllers/Purchase';
 import {purchaseStoreValidate} from './validations/purchase';
-import {body} from 'express-validator'
 
 const router = express.Router();
 
