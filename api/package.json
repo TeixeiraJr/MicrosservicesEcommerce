@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc -b"
+    "build": "tsc -b",
+    "migrations": "cd src/database/ && knex migrate:latest"
   },
   "keywords": [],
   "author": "",

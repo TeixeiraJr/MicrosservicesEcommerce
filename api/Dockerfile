@@ -7,9 +7,9 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+RUN npm run build && npm run migration
 COPY .env ./dist/
-WORKDIR ./dist
+WORKDIR /usr/app/dist
 
 EXPOSE 3333
 

@@ -3,8 +3,8 @@ import { Knex } from "knex";
 
 export async function up(knex: Knex): Promise<void> {
     return knex.schema.createTable('products', function (t) {
-        t.increments('id').primary();
-        t.string('name', 50);
+        t.string('id');
+        t.string('name').notNullable();
     })
 }
 

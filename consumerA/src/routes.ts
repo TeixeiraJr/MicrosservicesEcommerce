@@ -1,5 +1,4 @@
 import express from 'express';
-import {Request, Response} from 'express';
 import RabbitmqServer from './rabbitmq-server';
 
 const router = express.Router();
