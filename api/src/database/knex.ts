@@ -1,2 +1,4 @@
-let config = require('../knexfile');
-module.exports = require('knex')(config);
+import config from './index'
+const knex = require('knex')(config);
+
+export default knex
